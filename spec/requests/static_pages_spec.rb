@@ -62,12 +62,3 @@ describe "Static pages" do
     end
   end
 end
-
-require 'spec_helper'
-
-describe "Static pages" do
-
-  describe "Home page" do
-
-   
-  end
