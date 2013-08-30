@@ -1,5 +1,6 @@
 require 'spec_helper' 
 
+
 describe "LayoutLinks" do
 it "should have a Home page at '/'" do get '/'
     response.should have_selector('title', :content => "Home")
@@ -14,6 +15,7 @@ response.should have_selector('title', :content => "About")
 end
 it "should have a Help page at '/help'" do
 get '/help'
-response.should have_selector('title', :content => "Help")
+response.should have_title("Ruby on Rails Tutorial Sample App | Help")
+
 end 
 end
