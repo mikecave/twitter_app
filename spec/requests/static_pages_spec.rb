@@ -32,7 +32,19 @@ describe "Static pages" do
         end
       end
     end
+  
+      describe "follower/following counts" do
+        let(:user) { FactoryGirl.create(:user) }
+        let(:other_user) { FactoryGirl.create(:user) }
+        before do
+          other_user.follow!(user)
+          visit root_path
+        end
+
+
+      end
   end
+
 
   describe "Help page" do
     before { visit help_path }
